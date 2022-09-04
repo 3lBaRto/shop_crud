@@ -21,35 +21,31 @@ namespace Shop_Crud
         {
             txUsuario.Text = "";
             txContrasena.Text = "";
-            txApellido.Text = "";
-            txCargo.Text = "";
-            txDocumento.Text = "";
+            
         }
 
 
 
         private void Registrar(object sender, EventArgs e)
         {
-            Usuario U = new Usuario(txUsuario.Text.Trim(),txContrasena.Text.Trim(),txDocumento.Text.Trim(),txApellido.Text.Trim(),txCargo.Text.Trim());
-
-            if (T.ConfirmarU(U) == true)
-            {
-                MessageBox.Show("Usuario ya existente");
-                limpiar();
-            }
-            else if (T.Insertar(U) == true)
-            {
-                MessageBox.Show("se logro registrar con exito");
-                limpiar();
-            }
-            else 
-            {
-                MessageBox.Show("No se logro registrar ");
-            }
+            Registrarse f = new Registrarse();
+            f.ShowDialog();
         }
 
-       
-
-        
+        private void iniciar(object sender, EventArgs e)
+        {
+            
+            Principal f = new Principal();
+            Usuario U = new Usuario(txUsuario.Text.Trim(), txContrasena.Text.Trim(), "", "", "");
+            if (T.ConfirmarU(U) == true)
+            {
+                this.Hide();
+                f.ShowDialog();
+                
+            } else
+            {
+                MessageBox.Show("Usuario no registrado");
+            }
+        }
     }
 }
