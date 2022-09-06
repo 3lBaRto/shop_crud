@@ -11,3 +11,15 @@ C:\Users\pc\OneDrive\Documentos\C#\shop_crud-master\Shop_Crud\obj\Debug\Shop_Cru
 C:\Users\pc\OneDrive\Documentos\C#\shop_crud-master\Shop_Crud\obj\Debug\Shop_Crud.exe
 C:\Users\pc\OneDrive\Documentos\C#\shop_crud-master\Shop_Crud\obj\Debug\Shop_Crud.pdb
 C:\Users\pc\OneDrive\Documentos\C#\shop_crud-master\Shop_Crud\obj\Debug\Shop_Crud.Principal.resources
+C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\bin\Debug\Shop_Crud.exe.config
+C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\bin\Debug\Shop_Crud.exe
+C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\bin\Debug\Shop_Crud.pdb
+C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.csproj.AssemblyReference.cache
+C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Form1.resources
+C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Principal.resources
+C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Properties.Resources.resources
+C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Registrarse.resources
+C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.csproj.GenerateResource.cache
+C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.exe
+C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.pdb

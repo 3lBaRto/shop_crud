@@ -18,6 +18,10 @@ namespace Shop_Crud
             {
                 conx.Open();
                 return conx;
+                //hola amigo coco como estas?
+
+
+
             }
             else 
             {
