@@ -30,20 +30,27 @@ namespace Shop_Crud
         {
             Usuario U = new Usuario(txUsuario.Text.Trim(), txContrasena.Text.Trim(), txDocumento.Text.Trim(), txApellido.Text.Trim(), txCargo.Text.Trim());
 
-            if (T.ConfirmarU(U) == true)
+            if (T.ConfirmarU(U) == 1)
             {
                 MessageBox.Show("Usuario ya existente");
                 limpiar();
             }
-            else if (T.Insertar(U) == true)
+            else if (T.ConfirmarU(U) == 0)
             {
-                MessageBox.Show("se logro registrar con exito");
-                limpiar();
+                if (T.Insertar(U) == true)
+                {
+                    MessageBox.Show("Usuario registrado correctamente");
+                }
+                else
+                {
+                    MessageBox.Show("Usuario no registrado");
+                }
             }
             else
             {
-                MessageBox.Show("No se logro registrar ");
+                MessageBox.Show("No registrado, Error");
             }
+            
         }
     }
 }

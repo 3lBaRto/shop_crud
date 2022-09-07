@@ -43,7 +43,58 @@ namespace Shop_Crud
 
         private void Facturar(object sender, EventArgs e)
         {
-            pFacturacion.Visible = true;
+            if (pFacturacion.Visible == false)
+            {
+                pFacturacion.Visible = true;
+                pAcerca.Visible = false;
+                
+            }
+            else 
+            {
+                pFacturacion.Visible = false;
+            }
+            
+        }
+
+        private void btNavAcer_Click(object sender, EventArgs e)
+        {
+            if (pAcerca.Visible == false)
+            {
+                pAcerca.Visible = true;
+                pProductos.Visible = false;
+            }
+            else 
+            {
+                pAcerca.Visible = false;
+            }
+        }
+
+        private void btNavProd_Click(object sender, EventArgs e)
+        {
+            if (pProductos.Visible == false)
+            {
+                pProductos.Visible = true;
+                pPromociones.Visible = false;
+            }
+            else 
+            {
+                pProductos.Visible = false;
+            }
+        }
+
+        private void btNavPromo_Click(object sender, EventArgs e)
+        {
+            if (pPromociones.Visible == false)
+            {
+                pFacturacion.Visible = true;
+                pAcerca.Visible = true;
+                pProductos.Visible = true;
+                pPromociones.Visible = true;
+            }
+            else 
+            {
+                pPromociones.Visible = false;
+            }
         }
     }
 }

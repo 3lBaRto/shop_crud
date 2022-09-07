@@ -37,14 +37,34 @@ namespace Shop_Crud
             
             Principal f = new Principal();
             Usuario U = new Usuario(txUsuario.Text.Trim(), txContrasena.Text.Trim(), "", "", "");
-            if (T.ConfirmarU(U) == true)
+
+            if (T.ConfirmarU(U) == 0)
+            {
+
+                MessageBox.Show("Usuario no registrado");
+
+            }
+            else if (T.ConfirmarU(U) == 1)
             {
                 this.Hide();
                 f.ShowDialog();
-                
-            } else
+
+            } else if (T.ConfirmarU(U) == 2) 
             {
-                MessageBox.Show("Usuario no registrado");
+                MessageBox.Show("Usuario o contraseña incorrecta");
+            }
+            
+        }
+
+        private void cbMostrar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbMostrar.Checked == true)
+            {
+                txContrasena.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txContrasena.UseSystemPasswordChar = true;
             }
         }
     }

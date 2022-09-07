@@ -35,6 +35,7 @@ namespace Shop_Crud
             this.label2 = new System.Windows.Forms.Label();
             this.btRegistrar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.cbMostrar = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // txUsuario
@@ -50,6 +51,7 @@ namespace Shop_Crud
             this.txContrasena.Name = "txContrasena";
             this.txContrasena.Size = new System.Drawing.Size(100, 20);
             this.txContrasena.TabIndex = 1;
+            this.txContrasena.UseSystemPasswordChar = true;
             // 
             // label1
             // 
@@ -72,7 +74,7 @@ namespace Shop_Crud
             // btRegistrar
             // 
             this.btRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btRegistrar.Location = new System.Drawing.Point(65, 160);
+            this.btRegistrar.Location = new System.Drawing.Point(50, 193);
             this.btRegistrar.Name = "btRegistrar";
             this.btRegistrar.Size = new System.Drawing.Size(99, 23);
             this.btRegistrar.TabIndex = 4;
@@ -84,7 +86,7 @@ namespace Shop_Crud
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(189, 160);
+            this.button1.Location = new System.Drawing.Point(174, 193);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 23);
             this.button1.TabIndex = 11;
@@ -93,11 +95,24 @@ namespace Shop_Crud
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.iniciar);
             // 
+            // cbMostrar
+            // 
+            this.cbMostrar.AutoSize = true;
+            this.cbMostrar.Location = new System.Drawing.Point(166, 147);
+            this.cbMostrar.Name = "cbMostrar";
+            this.cbMostrar.Size = new System.Drawing.Size(117, 17);
+            this.cbMostrar.TabIndex = 12;
+            this.cbMostrar.TabStop = false;
+            this.cbMostrar.Text = "Mostrar contraseña";
+            this.cbMostrar.UseVisualStyleBackColor = true;
+            this.cbMostrar.CheckedChanged += new System.EventHandler(this.cbMostrar_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(379, 286);
+            this.Controls.Add(this.cbMostrar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btRegistrar);
             this.Controls.Add(this.label2);
@@ -119,6 +134,7 @@ namespace Shop_Crud
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btRegistrar;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox cbMostrar;
     }
 }
 
