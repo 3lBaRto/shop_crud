@@ -39,3 +39,21 @@ C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop
 C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Facturacion.resources
 C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.productos.resources
 C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Promocion.resources
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\bin\Debug\Shop_Crud.exe.config
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\bin\Debug\Shop_Crud.exe
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\bin\Debug\Shop_Crud.pdb
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.csproj.AssemblyReference.cache
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.csproj.SuggestedBindingRedirects.cache
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Acerca_de.resources
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Form1.resources
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Facturacion.resources
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Principal.resources
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.productos.resources
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Promocion.resources
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Properties.Resources.resources
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Registrarse.resources
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.csproj.GenerateResource.cache
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.csproj.CoreCompileInputs.cache
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.exe
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.pdb
+C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Admin.resources

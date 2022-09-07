@@ -87,7 +87,7 @@
             this.btNavPromo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btNavPromo.Dock = System.Windows.Forms.DockStyle.Left;
             this.btNavPromo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btNavPromo.Location = new System.Drawing.Point(382, 0);
+            this.btNavPromo.Location = new System.Drawing.Point(436, 0);
             this.btNavPromo.Name = "btNavPromo";
             this.btNavPromo.Size = new System.Drawing.Size(93, 60);
             this.btNavPromo.TabIndex = 16;
@@ -101,7 +101,7 @@
             this.btNavProd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btNavProd.Dock = System.Windows.Forms.DockStyle.Left;
             this.btNavProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btNavProd.Location = new System.Drawing.Point(289, 0);
+            this.btNavProd.Location = new System.Drawing.Point(343, 0);
             this.btNavProd.Name = "btNavProd";
             this.btNavProd.Size = new System.Drawing.Size(93, 60);
             this.btNavProd.TabIndex = 15;
@@ -115,7 +115,7 @@
             this.btNavAcer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btNavAcer.Dock = System.Windows.Forms.DockStyle.Left;
             this.btNavAcer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btNavAcer.Location = new System.Drawing.Point(196, 0);
+            this.btNavAcer.Location = new System.Drawing.Point(250, 0);
             this.btNavAcer.Name = "btNavAcer";
             this.btNavAcer.Size = new System.Drawing.Size(93, 60);
             this.btNavAcer.TabIndex = 14;
@@ -129,7 +129,7 @@
             this.btNavFac.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btNavFac.Dock = System.Windows.Forms.DockStyle.Left;
             this.btNavFac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btNavFac.Location = new System.Drawing.Point(100, 0);
+            this.btNavFac.Location = new System.Drawing.Point(154, 0);
             this.btNavFac.Name = "btNavFac";
             this.btNavFac.Size = new System.Drawing.Size(96, 60);
             this.btNavFac.TabIndex = 13;
@@ -141,11 +141,14 @@
             // pbNavegador
             // 
             this.pbNavegador.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbNavegador.Image = ((System.Drawing.Image)(resources.GetObject("pbNavegador.Image")));
             this.pbNavegador.Location = new System.Drawing.Point(0, 0);
             this.pbNavegador.Name = "pbNavegador";
-            this.pbNavegador.Size = new System.Drawing.Size(100, 60);
+            this.pbNavegador.Size = new System.Drawing.Size(154, 60);
+            this.pbNavegador.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbNavegador.TabIndex = 0;
             this.pbNavegador.TabStop = false;
+            this.pbNavegador.Click += new System.EventHandler(this.Admin);
             // 
             // pPrincipal
             // 

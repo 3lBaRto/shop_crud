@@ -11,11 +11,14 @@ namespace Shop_Crud
 {
     class T
     {
-     
+        static public bool Admin = false;
         static public int ConfirmarU(Usuario U) 
         {
-            DataTable dt = generar();
+            DataTable dt = generar(0);
             int x =0;
+
+            
+
             try
             {
                 for (int i = 0; i <= dt.Rows.Count; i++)
@@ -24,9 +27,15 @@ namespace Shop_Crud
 
                     if (U.Nombre == dt.Rows[i]["nombre"].ToString().Trim() && U.Contra1 == dt.Rows[i]["contrasena"].ToString().Trim())
                     {
+                        if (dt.Rows[i]["cargo"].ToString().Trim().ToUpper() == "ADMIN")
+                        {
+                            Admin = true;
+                        }
 
                         x = 1;
                         return x;
+
+                        
                     }
                     else if (U.Nombre == dt.Rows[i]["nombre"].ToString().Trim() || U.Contra1 == dt.Rows[i]["contrasena"].ToString().Trim())
                     {
@@ -54,13 +63,15 @@ namespace Shop_Crud
             return 0;
         }
 
-        static public DataTable generar() 
+        static public DataTable generar(int i) 
         {
             try
             {
-                String cadena = "select * from usuarios";
+                string[] cadena = new string[2];
+                cadena[0] = "select * from usuarios";
+                cadena[1] = "select * from productos";
 
-                SqlCommand com = new SqlCommand(cadena, Conexion.Abrir());
+                SqlCommand com = new SqlCommand(cadena[i], Conexion.Abrir());
 
                 SqlDataReader Read = com.ExecuteReader();
 
@@ -80,7 +91,7 @@ namespace Shop_Crud
 
         }
 
-        static public bool Insertar(Usuario U)
+        static public bool Insertar_U(Usuario U)
         {
             try
             {
@@ -90,11 +101,43 @@ namespace Shop_Crud
 
                 int i = com.ExecuteNonQuery();
 
+                Conexion.cerrar();
+
                 if (i == 1)
                 {
                     return true;
                 }
                 else 
+                {
+                    return false;
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error 404");
+            }
+
+            return false;
+
+        }
+
+        static public bool Insertar_P(Producto P)
+        {
+            try
+            {
+                string cadena = $"insert into productos values ('{P.Nom_producto}','{P.Precio}','{P.Descrip}');";
+
+                SqlCommand com = new SqlCommand(cadena, Conexion.Abrir());
+
+                int i = com.ExecuteNonQuery();
+
+                Conexion.cerrar();
+
+                if (i == 1)
+                {
+                    return true;
+                }
+                else
                 {
                     return false;
                 }

@@ -37,7 +37,7 @@ namespace Shop_Crud
             }
             else if (T.ConfirmarU(U) == 0)
             {
-                if (T.Insertar(U) == true)
+                if (T.Insertar_U(U) == true)
                 {
                     MessageBox.Show("Usuario registrado correctamente");
                 }

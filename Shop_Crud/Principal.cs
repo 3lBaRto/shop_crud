@@ -128,5 +128,17 @@ namespace Shop_Crud
             }
         }
 
+        private void Admin(object sender, EventArgs e)
+        {
+            if (T.Admin == true) 
+            {
+                Admin a = new Admin();
+                a.ShowDialog();
+            }
+            else 
+            {
+                MessageBox.Show("No eres administrador");
+            }
+        }
     }
 }
