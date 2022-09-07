@@ -38,13 +38,13 @@
             this.pbNavegador = new System.Windows.Forms.PictureBox();
             this.pPrincipal = new System.Windows.Forms.Panel();
             this.pFacturacion = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pAcerca = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.pProductos = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.pPromociones = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pNav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNavegador)).BeginInit();
@@ -87,42 +87,42 @@
             this.btNavPromo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btNavPromo.Dock = System.Windows.Forms.DockStyle.Left;
             this.btNavPromo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btNavPromo.Location = new System.Drawing.Point(379, 0);
+            this.btNavPromo.Location = new System.Drawing.Point(382, 0);
             this.btNavPromo.Name = "btNavPromo";
             this.btNavPromo.Size = new System.Drawing.Size(93, 60);
             this.btNavPromo.TabIndex = 16;
             this.btNavPromo.Text = "Promociones";
             this.btNavPromo.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btNavPromo.UseVisualStyleBackColor = true;
-            this.btNavPromo.Click += new System.EventHandler(this.btNavPromo_Click);
+            this.btNavPromo.Click += new System.EventHandler(this.Promo);
             // 
             // btNavProd
             // 
             this.btNavProd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btNavProd.Dock = System.Windows.Forms.DockStyle.Left;
             this.btNavProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btNavProd.Location = new System.Drawing.Point(286, 0);
+            this.btNavProd.Location = new System.Drawing.Point(289, 0);
             this.btNavProd.Name = "btNavProd";
             this.btNavProd.Size = new System.Drawing.Size(93, 60);
             this.btNavProd.TabIndex = 15;
             this.btNavProd.Text = "Productos";
             this.btNavProd.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btNavProd.UseVisualStyleBackColor = true;
-            this.btNavProd.Click += new System.EventHandler(this.btNavProd_Click);
+            this.btNavProd.Click += new System.EventHandler(this.Produc);
             // 
             // btNavAcer
             // 
             this.btNavAcer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btNavAcer.Dock = System.Windows.Forms.DockStyle.Left;
             this.btNavAcer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btNavAcer.Location = new System.Drawing.Point(193, 0);
+            this.btNavAcer.Location = new System.Drawing.Point(196, 0);
             this.btNavAcer.Name = "btNavAcer";
             this.btNavAcer.Size = new System.Drawing.Size(93, 60);
             this.btNavAcer.TabIndex = 14;
             this.btNavAcer.Text = "Acerca de nosotros";
             this.btNavAcer.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btNavAcer.UseVisualStyleBackColor = true;
-            this.btNavAcer.Click += new System.EventHandler(this.btNavAcer_Click);
+            this.btNavAcer.Click += new System.EventHandler(this.Acerca);
             // 
             // btNavFac
             // 
@@ -131,12 +131,12 @@
             this.btNavFac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btNavFac.Location = new System.Drawing.Point(100, 0);
             this.btNavFac.Name = "btNavFac";
-            this.btNavFac.Size = new System.Drawing.Size(93, 60);
+            this.btNavFac.Size = new System.Drawing.Size(96, 60);
             this.btNavFac.TabIndex = 13;
             this.btNavFac.Text = "Facturacion";
             this.btNavFac.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btNavFac.UseVisualStyleBackColor = true;
-            this.btNavFac.Click += new System.EventHandler(this.Facturar);
+            this.btNavFac.Click += new System.EventHandler(this.MostrarFac);
             // 
             // pbNavegador
             // 
@@ -168,15 +168,6 @@
             this.pFacturacion.TabIndex = 0;
             this.pFacturacion.Visible = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "aqui es panel facturacion";
-            // 
             // pAcerca
             // 
             this.pAcerca.Controls.Add(this.pProductos);
@@ -187,15 +178,6 @@
             this.pAcerca.Size = new System.Drawing.Size(800, 390);
             this.pAcerca.TabIndex = 1;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(164, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Acerca de nosotros";
-            // 
             // pProductos
             // 
             this.pProductos.Controls.Add(this.pPromociones);
@@ -205,15 +187,6 @@
             this.pProductos.Name = "pProductos";
             this.pProductos.Size = new System.Drawing.Size(800, 390);
             this.pProductos.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(123, 67);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Productos";
             // 
             // pPromociones
             // 
@@ -232,6 +205,33 @@
             this.label4.Size = new System.Drawing.Size(68, 13);
             this.label4.TabIndex = 0;
             this.label4.Text = "Promociones";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(123, 67);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Productos";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(164, 67);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(99, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Acerca de nosotros";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(65, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(126, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "aqui es panel facturacion";
             // 
             // Principal
             // 

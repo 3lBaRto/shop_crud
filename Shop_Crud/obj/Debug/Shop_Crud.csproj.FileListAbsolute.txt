@@ -23,3 +23,19 @@ C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud
 C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.exe
 C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.pdb
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\bin\Debug\Shop_Crud.exe.config
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\bin\Debug\Shop_Crud.exe
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\bin\Debug\Shop_Crud.pdb
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.csproj.AssemblyReference.cache
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Form1.resources
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Principal.resources
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Properties.Resources.resources
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Registrarse.resources
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.csproj.GenerateResource.cache
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.csproj.CoreCompileInputs.cache
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.exe
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.pdb
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Acerca_de.resources
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Facturacion.resources
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.productos.resources
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Promocion.resources

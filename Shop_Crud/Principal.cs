@@ -40,61 +40,93 @@ namespace Shop_Crud
                 pNav.Height = 60;
             }
         }
-
-        private void Facturar(object sender, EventArgs e)
+        private Form FormActivo = null;
+        private void AbrirForm(Form XForm)
         {
-            if (pFacturacion.Visible == false)
+            // ActiveForm obtiene el formulario activo para cuestionar si existe y 
+            //cerrarlo
+            /*
+            if (FormActivo != null) 
             {
-                pFacturacion.Visible = true;
-                pAcerca.Visible = false;
-                
-            }
-            else 
-            {
-                pFacturacion.Visible = false;
-            }
-            
+                ActiveForm.Close();
+            }*/
+            //Usamos el form creado anteriormente para coger el parametro
+            //luego editamos ese formulario, evitando que sea otra ventana
+            //y quitamos su borde para terminar editando su propiedad DOCK
+            FormActivo = XForm;
+            XForm.TopLevel = false;
+            XForm.FormBorderStyle = FormBorderStyle.None;
+            XForm.Dock = DockStyle.Fill;
+
+            //Por ultimo lo igualamos al controlador del panel 
+            pPrincipal.Controls.Add(XForm);
+
+            //
+            pPrincipal.Tag = XForm;
+            XForm.BringToFront();
+            XForm.Show();
+
+
         }
 
-        private void btNavAcer_Click(object sender, EventArgs e)
+        private void MostrarFac(object sender, EventArgs e)
         {
-            if (pAcerca.Visible == false)
+            Facturacion f = new Facturacion();
+
+            if (f == ActiveForm)
             {
-                pAcerca.Visible = true;
-                pProductos.Visible = false;
+                f.Close();
             }
-            else 
+            else
             {
-                pAcerca.Visible = false;
+
+                AbrirForm(f);
             }
         }
 
-        private void btNavProd_Click(object sender, EventArgs e)
+        private void Acerca(object sender, EventArgs e)
         {
-            if (pProductos.Visible == false)
+            Acerca_de C = new Acerca_de();
+
+            if (C == ActiveForm)
             {
-                pProductos.Visible = true;
-                pPromociones.Visible = false;
+                C.Close();
             }
-            else 
+            else
             {
-                pProductos.Visible = false;
+
+                AbrirForm(C);
+            }
+
+        }
+        private void Produc(object sender, EventArgs e)
+        {
+            productos p = new productos();
+
+            if (p == ActiveForm)
+            {
+                p.Close();
+            }
+            else
+            {
+
+                AbrirForm(p);
+            }
+        }
+        private void Promo(object sender, EventArgs e)
+        {
+            Promocion g = new Promocion();
+
+            if (g == ActiveForm)
+            {
+                g.Close();
+            }
+            else
+            {
+
+                AbrirForm(g);
             }
         }
 
-        private void btNavPromo_Click(object sender, EventArgs e)
-        {
-            if (pPromociones.Visible == false)
-            {
-                pFacturacion.Visible = true;
-                pAcerca.Visible = true;
-                pProductos.Visible = true;
-                pPromociones.Visible = true;
-            }
-            else 
-            {
-                pPromociones.Visible = false;
-            }
-        }
     }
 }
