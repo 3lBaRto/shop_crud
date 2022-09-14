@@ -11,16 +11,19 @@ namespace Shop_Crud
         private string nom_producto;
         private int precio;
         private string descrip;
+        private string seccion;
 
-        public Producto(string nom_producto, int precio, string descrip)
+        public Producto(string nom_producto, int precio, string descrip, string seccion)
         {
-            this.nom_producto = nom_producto;
-            this.precio = precio;
-            this.descrip = descrip;
+            this.Nom_producto = nom_producto;
+            this.Precio = precio;
+            this.Descrip = descrip;
+            this.Seccion = seccion;
         }
 
         public string Nom_producto { get => nom_producto; set => nom_producto = value; }
         public int Precio { get => precio; set => precio = value; }
         public string Descrip { get => descrip; set => descrip = value; }
+        public string Seccion { get => seccion; set => seccion = value; }
     }
 }

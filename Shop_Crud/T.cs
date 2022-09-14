@@ -125,7 +125,7 @@ namespace Shop_Crud
         {
             try
             {
-                string cadena = $"insert into productos values ('{P.Nom_producto}','{P.Precio}','{P.Descrip}');";
+                string cadena = $"insert into productos values ('{P.Nom_producto}', {P.Precio} , '{P.Seccion}' , '{P.Descrip}');";
 
                 SqlCommand com = new SqlCommand(cadena, Conexion.Abrir());
 
@@ -150,5 +150,70 @@ namespace Shop_Crud
             return false;
 
         }
+
+        static public bool Eliminar(int index,int id) 
+        {
+            string cadena="";
+
+            switch (index)
+            {
+                case 1:
+                    cadena = $"delete usuarios where documento='{id}';";
+                    break;
+                case 2:
+                    cadena = $"delete productos where id='{id}';";
+                    break;
+                default:
+                    MessageBox.Show("Error al identificar la tabla");
+                    break;
+            }
+
+            SqlCommand com = new SqlCommand(cadena, Conexion.Abrir());
+
+            int i = com.ExecuteNonQuery();
+
+            Conexion.cerrar();
+
+            if (i == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+
+        }
+
+        static public bool Actualizar(int index, int id,Producto P, Usuario U) 
+        {
+            string cadena = "";
+            switch (index)
+            {
+                case 1:
+                    cadena = $"update usuarios set documento='{U.Documento}', nombre='{U.Nombre}', apellido='{U.Apellido}', contrasena='{U.Contra1}', cargo='{U.Cargo}' where documento='{id}';;";
+                    break;
+                case 2:
+                    cadena = $"update productos set NomProduc='{P.Nom_producto}', PrecProduc='{P.Precio}', Seccion='{P.Seccion}', DescriProduc='{P.Descrip}' where documento='{id}';;";
+                    break;
+                default:
+                    MessageBox.Show("Error al identificar la tabla");
+                    break;
+            }
+
+            SqlCommand com = new SqlCommand(cadena,Conexion.Abrir());
+
+            int i = com.ExecuteNonQuery();
+
+            if (i == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        } 
     }
 }

@@ -34,16 +34,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tbPrecio = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.tbDesc = new System.Windows.Forms.TextBox();
+            this.tbSec = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbDesc = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.dtg_admin = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.dtg_admin = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -101,20 +103,20 @@
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
             this.label4.Location = new System.Drawing.Point(39, 85);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 13);
+            this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Descripcion";
+            this.label4.Text = "Seccion";
             // 
-            // tbDesc
+            // tbSec
             // 
-            this.tbDesc.Location = new System.Drawing.Point(108, 82);
-            this.tbDesc.Name = "tbDesc";
-            this.tbDesc.Size = new System.Drawing.Size(210, 20);
-            this.tbDesc.TabIndex = 5;
+            this.tbSec.Location = new System.Drawing.Point(108, 82);
+            this.tbSec.Name = "tbSec";
+            this.tbSec.Size = new System.Drawing.Size(210, 20);
+            this.tbSec.TabIndex = 5;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(348, 30);
+            this.button1.Location = new System.Drawing.Point(348, 33);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(90, 72);
             this.button1.TabIndex = 7;
@@ -125,17 +127,36 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Olive;
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.tbDesc);
             this.panel1.Controls.Add(this.tbProducto);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.tbPrecio);
-            this.panel1.Controls.Add(this.tbDesc);
+            this.panel1.Controls.Add(this.tbSec);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(101, 13);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(499, 143);
             this.panel1.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(39, 111);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(63, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Descripcion";
+            // 
+            // tbDesc
+            // 
+            this.tbDesc.Location = new System.Drawing.Point(108, 108);
+            this.tbDesc.Name = "tbDesc";
+            this.tbDesc.Size = new System.Drawing.Size(210, 20);
+            this.tbDesc.TabIndex = 8;
             // 
             // panel2
             // 
@@ -146,6 +167,26 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(499, 96);
             this.panel2.TabIndex = 9;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(348, 16);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(90, 72);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Actualizar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Actualizar);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(70, 16);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(90, 72);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Eliminar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Eliminar);
             // 
             // groupBox1
             // 
@@ -159,18 +200,6 @@
             this.groupBox1.Text = "Seleccione";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 74);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(66, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Usuarios";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
@@ -183,6 +212,18 @@
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(6, 74);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(66, 17);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Usuarios";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
             // dtg_admin
             // 
             this.dtg_admin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -190,25 +231,6 @@
             this.dtg_admin.Name = "dtg_admin";
             this.dtg_admin.Size = new System.Drawing.Size(499, 209);
             this.dtg_admin.TabIndex = 11;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(70, 16);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 72);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Eliminar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Eliminar);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(348, 16);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 72);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Actualizar";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // Admin
             // 
@@ -242,7 +264,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbPrecio;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tbDesc;
+        private System.Windows.Forms.TextBox tbSec;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
@@ -252,5 +274,7 @@
         private System.Windows.Forms.DataGridView dtg_admin;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox tbDesc;
     }
 }

@@ -57,3 +57,8 @@ C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.cspro
 C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.exe
 C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.pdb
 C:\Users\pc\OneDrive\Documentos\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Admin.resources
+C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Acerca_de.resources
+C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Admin.resources
+C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Facturacion.resources
+C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.productos.resources
+C:\Users\User\Documents\shop_crud-master\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Promocion.resources
