@@ -199,6 +199,7 @@
             this.pPromociones.Name = "pPromociones";
             this.pPromociones.Size = new System.Drawing.Size(800, 390);
             this.pPromociones.TabIndex = 1;
+            this.pPromociones.Paint += new System.Windows.Forms.PaintEventHandler(this.pPromociones_Paint);
             // 
             // label4
             // 

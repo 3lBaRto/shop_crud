@@ -140,5 +140,10 @@ namespace Shop_Crud
                 MessageBox.Show("No eres administrador");
             }
         }
+
+        private void pPromociones_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

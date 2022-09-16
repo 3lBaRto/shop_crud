@@ -55,27 +55,67 @@ namespace Shop_Crud
 
         private void btnSemillas_Click(object sender, EventArgs e)
         {
+
+            openKidForm(new FormSemillas());
             hideSubMenu();
         }
 
         private void btnFertilizantes_Click(object sender, EventArgs e)
         {
+            openKidForm(new FormFertilizantes());
             hideSubMenu();
         }
 
         private void btnSustratos_Click(object sender, EventArgs e)
         {
+            openKidForm(new FormSustratos());
             hideSubMenu();
         }
 
         private void btnMateras_Click(object sender, EventArgs e)
         {
+            openKidForm(new FormMateras());
             hideSubMenu();
         }
 
         private void btnClones_Click(object sender, EventArgs e)
         {
+            openKidForm(new FormClones());
             hideSubMenu();
         }
+
+
+        private Form activeForm = null;
+        private void openKidForm(Form KidForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = KidForm;
+            KidForm.TopLevel = false;
+            KidForm.FormBorderStyle = FormBorderStyle.None;
+            KidForm.Dock = DockStyle.Fill;
+            panelKidForm.Controls.Add(KidForm);
+            panelKidForm.Tag = KidForm;
+            KidForm.BringToFront();
+            KidForm.Show();
+
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void productos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
+
+
+
+    
+    
+   
 }

@@ -71,6 +71,36 @@
     <Compile Include="Facturacion.Designer.cs">
       <DependentUpon>Facturacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormClones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClones.Designer.cs">
+      <DependentUpon>FormClones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFertilizantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFertilizantes.Designer.cs">
+      <DependentUpon>FormFertilizantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMateras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMateras.Designer.cs">
+      <DependentUpon>FormMateras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSemillas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSemillas.Designer.cs">
+      <DependentUpon>FormSemillas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSustratos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSustratos.Designer.cs">
+      <DependentUpon>FormSustratos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +141,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Facturacion.resx">
       <DependentUpon>Facturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClones.resx">
+      <DependentUpon>FormClones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFertilizantes.resx">
+      <DependentUpon>FormFertilizantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMateras.resx">
+      <DependentUpon>FormMateras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSemillas.resx">
+      <DependentUpon>FormSemillas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSustratos.resx">
+      <DependentUpon>FormSustratos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
