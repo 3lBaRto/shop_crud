@@ -10,7 +10,7 @@ namespace Shop_Crud
 {
     class Conexion
     {
-        static SqlConnection conx = new SqlConnection("server=localhost\\SQLEXPRESS;database=geosmina;integrated security=true");
+        static SqlConnection conx = new SqlConnection("server=DESKTOP-6UK92PT\\SQLEXPRESS;database=geosmina;integrated security=true");
 
         static public SqlConnection Abrir() 
         {

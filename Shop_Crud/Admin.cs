@@ -24,6 +24,7 @@ namespace Shop_Crud
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
+
             try
             {
                 DataTable dt = T.generar(0);
@@ -59,19 +60,25 @@ namespace Shop_Crud
             tbProducto.Text = "";
             tbPrecio.Text = "";
             tbSec.Text = "";
-            tbSec.Text = "";
+            tbDesc.Text = "";
         }
-
+        public void limbiarDTG() 
+        {
+            radioButton2.Checked = false;
+            radioButton1.Checked = false;
+            dtg_admin.Columns.Clear();
+        }
         private void InsertarP(object sender, EventArgs e)
         {
             if(tbProducto.Text.Length > 1 && tbPrecio.Text.Length > 2 && tbSec.Text.Length > 5) 
             {
-                Producto p = new Producto(tbProducto.Text.Trim(),Convert.ToInt32(tbPrecio.Text),tbSec.Text.Trim(),tbSec.Text.Trim());
+                Producto p = new Producto(tbProducto.Text.Trim(),Convert.ToInt32(tbPrecio.Text),tbSec.Text.Trim(),tbDesc.Text.Trim());
 
                 if (T.Insertar_P(p) == true) 
                 {
                     MessageBox.Show("Producto registrado correctamente");
                     Limpiar();
+                    limbiarDTG();
 
                 }
                 else 
@@ -98,6 +105,7 @@ namespace Shop_Crud
                     if (T.Eliminar(index, id) == true) 
                     {
                         MessageBox.Show("ELiminado con exito");
+                        limbiarDTG();
                     }
                     else 
                     {
@@ -110,6 +118,7 @@ namespace Shop_Crud
                     if (T.Eliminar(index, id) == true)
                     {
                         MessageBox.Show("ELiminado con exito");
+                        limbiarDTG();
                     }
                     else
                     {
@@ -136,7 +145,7 @@ namespace Shop_Crud
         private void Actualizar(object sender, EventArgs e)
         {
             int i = dtg_admin.CurrentRow.Index;
-            int id=0;
+            int id;
 
             Usuario U = null;
             Producto P = null;
@@ -172,10 +181,10 @@ namespace Shop_Crud
                 id = Convert.ToInt32(dtg_admin.Rows[i].Cells["id"].Value);
                 
                     //producto
-                    string nombrePro = dtg_admin.Rows[i].Cells["NomProduc"].Value.ToString();
-                    int precioPro = Convert.ToInt32(dtg_admin.Rows[i].Cells["PrecProduc"].Value);
-                    string seccionPro = dtg_admin.Rows[i].Cells["Seccion"].Value.ToString();
-                    string DescriProc = dtg_admin.Rows[i].Cells["DescriProduc"].Value.ToString();
+                    string nombrePro = dtg_admin.Rows[i].Cells["nom_produc"].Value.ToString();
+                    int precioPro = Convert.ToInt32(dtg_admin.Rows[i].Cells["pre_produc"].Value);
+                    string seccionPro = dtg_admin.Rows[i].Cells["secc_produc"].Value.ToString();
+                    string DescriProc = dtg_admin.Rows[i].Cells["descri_produc"].Value.ToString();
 
                     P = new Producto(nombrePro, precioPro, DescriProc, seccionPro);
 

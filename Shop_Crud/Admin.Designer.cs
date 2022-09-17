@@ -226,7 +226,12 @@
             // 
             // dtg_admin
             // 
+            this.dtg_admin.BackgroundColor = System.Drawing.Color.Khaki;
+            this.dtg_admin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtg_admin.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dtg_admin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtg_admin.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.dtg_admin.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dtg_admin.Location = new System.Drawing.Point(101, 298);
             this.dtg_admin.Name = "dtg_admin";
             this.dtg_admin.Size = new System.Drawing.Size(499, 209);

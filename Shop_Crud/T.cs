@@ -188,32 +188,46 @@ namespace Shop_Crud
 
         static public bool Actualizar(int index, int id,Producto P, Usuario U) 
         {
-            string cadena = "";
-            switch (index)
+            try
             {
-                case 1:
-                    cadena = $"update usuarios set documento='{U.Documento}', nombre='{U.Nombre}', apellido='{U.Apellido}', contrasena='{U.Contra1}', cargo='{U.Cargo}' where documento='{id}';;";
-                    break;
-                case 2:
-                    cadena = $"update productos set NomProduc='{P.Nom_producto}', PrecProduc='{P.Precio}', Seccion='{P.Seccion}', DescriProduc='{P.Descrip}' where documento='{id}';;";
-                    break;
-                default:
-                    MessageBox.Show("Error al identificar la tabla");
-                    break;
+                string cadena = "";
+                switch (index)
+                {
+                    case 1:
+                        cadena = $"update usuarios set nombre='{U.Nombre}', apellido='{U.Apellido}', contrasena='{U.Contra1}', cargo='{U.Cargo}' where documento='{id}';";
+                        break;
+                    case 2:
+                        cadena = $"update productos set nom_produc='{P.Nom_producto}', pre_produc={P.Precio}, secc_produc='{P.Seccion}', descri_produc='{P.Descrip}' where id={id};";
+                        break;
+                    default:
+                        MessageBox.Show("Error al identificar la tabla");
+                        break;
+                }
+
+                
+                SqlCommand com = new SqlCommand(cadena, Conexion.Abrir());
+                int i= com.ExecuteNonQuery(); ;
+
+                
+                
+
+                Conexion.cerrar();
+
+                if (i == 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-
-            SqlCommand com = new SqlCommand(cadena,Conexion.Abrir());
-
-            int i = com.ExecuteNonQuery();
-
-            if (i == 1)
+            catch (Exception)
             {
-                return true;
-            }
-            else
-            {
+                MessageBox.Show("Error al actualizar");
                 return false;
             }
+            
         } 
     }
 }
