@@ -32,7 +32,10 @@ namespace Shop_Crud
 
         static public void cerrar() 
         {
-            conx.Close();
+            if (conx.State == ConnectionState.Open) 
+            {
+                conx.Close();
+            }
         }
     }
 }

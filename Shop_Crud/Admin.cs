@@ -95,7 +95,7 @@ namespace Shop_Crud
         int index = 0;
         private void Eliminar(object sender, EventArgs e)
         {
-            try
+            if(index!=0)
             {
                 int i = dtg_admin.CurrentRow.Index;
                 int id = 0;
@@ -130,11 +130,10 @@ namespace Shop_Crud
 
 
                 
-            }
-            catch (Exception)
+            }else
             {
 
-                MessageBox.Show("papi cayooo");
+                MessageBox.Show("Debes seleccionar una tabla");
             }
             
                 
@@ -144,18 +143,20 @@ namespace Shop_Crud
 
         private void Actualizar(object sender, EventArgs e)
         {
-            int i = dtg_admin.CurrentRow.Index;
-            int id;
-
-            Usuario U = null;
-            Producto P = null;
-
-            if (index == 1)
+            if (index != 0) 
             {
-                id = Convert.ToInt32(dtg_admin.Rows[i].Cells["documento"].Value);
+                int i = dtg_admin.CurrentRow.Index;
+                int id;
 
-                
-                
+                Usuario U = null;
+                Producto P = null;
+
+                if (index == 1)
+                {
+                    id = Convert.ToInt32(dtg_admin.Rows[i].Cells["documento"].Value);
+
+
+
                     //Usuario
                     string nameU = dtg_admin.Rows[i].Cells["nombre"].Value.ToString();
                     string apellidoU = dtg_admin.Rows[i].Cells["apellido"].Value.ToString();
@@ -165,21 +166,21 @@ namespace Shop_Crud
 
                     U = new Usuario(nameU, contraU, documenU, apellidoU, cargoU);
 
-                    if (T.Actualizar(index, id, P, U)==true) 
+                    if (T.Actualizar(index, id, P, U) == true)
                     {
                         MessageBox.Show("Se actualizo con exito");
                     }
-                    else 
+                    else
                     {
                         MessageBox.Show("No se logro actualizar");
                     }
 
-                
-            }
-            else if (index == 2)
-            {
-                id = Convert.ToInt32(dtg_admin.Rows[i].Cells["id"].Value);
-                
+
+                }
+                else if (index == 2)
+                {
+                    id = Convert.ToInt32(dtg_admin.Rows[i].Cells["id"].Value);
+
                     //producto
                     string nombrePro = dtg_admin.Rows[i].Cells["nom_produc"].Value.ToString();
                     int precioPro = Convert.ToInt32(dtg_admin.Rows[i].Cells["pre_produc"].Value);
@@ -196,7 +197,11 @@ namespace Shop_Crud
                     {
                         MessageBox.Show("No se logro actualizar");
                     }
-                
+
+                }
+            }else 
+            {
+                MessageBox.Show("Debes seleccionar una tabla");
             }
 
 

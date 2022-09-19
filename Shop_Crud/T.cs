@@ -206,7 +206,8 @@ namespace Shop_Crud
 
                 
                 SqlCommand com = new SqlCommand(cadena, Conexion.Abrir());
-                int i= com.ExecuteNonQuery(); ;
+
+                int i= com.ExecuteNonQuery(); 
 
                 
                 

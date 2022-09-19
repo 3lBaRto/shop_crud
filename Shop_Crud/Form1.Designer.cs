@@ -40,16 +40,19 @@ namespace Shop_Crud
             // 
             // txUsuario
             // 
+            this.txUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txUsuario.Location = new System.Drawing.Point(166, 67);
             this.txUsuario.Name = "txUsuario";
-            this.txUsuario.Size = new System.Drawing.Size(100, 20);
+            this.txUsuario.Size = new System.Drawing.Size(100, 13);
             this.txUsuario.TabIndex = 0;
             // 
             // txContrasena
             // 
+            this.txContrasena.BackColor = System.Drawing.SystemColors.Window;
+            this.txContrasena.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txContrasena.Location = new System.Drawing.Point(166, 108);
             this.txContrasena.Name = "txContrasena";
-            this.txContrasena.Size = new System.Drawing.Size(100, 20);
+            this.txContrasena.Size = new System.Drawing.Size(100, 13);
             this.txContrasena.TabIndex = 1;
             this.txContrasena.UseSystemPasswordChar = true;
             // 
@@ -111,6 +114,7 @@ namespace Shop_Crud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(379, 286);
             this.Controls.Add(this.cbMostrar);
             this.Controls.Add(this.button1);
@@ -120,7 +124,7 @@ namespace Shop_Crud
             this.Controls.Add(this.txContrasena);
             this.Controls.Add(this.txUsuario);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 
