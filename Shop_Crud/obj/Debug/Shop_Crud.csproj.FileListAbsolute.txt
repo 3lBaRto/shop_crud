@@ -90,3 +90,9 @@ C:\Users\dacne\Documents\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.csproj.Gener
 C:\Users\dacne\Documents\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.csproj.CoreCompileInputs.cache
 C:\Users\dacne\Documents\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.exe
 C:\Users\dacne\Documents\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.pdb
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Admin.resources
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.FormClones.resources
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.FormFertilizantes.resources
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.FormMateras.resources
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.FormSemillas.resources
+C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.FormSustratos.resources

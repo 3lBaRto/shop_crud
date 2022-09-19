@@ -89,6 +89,12 @@
     <Compile Include="FormMateras.Designer.cs">
       <DependentUpon>FormMateras.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPromocionesSemanales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPromocionesSemanales.Designer.cs">
+      <DependentUpon>FormPromocionesSemanales.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSemillas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMateras.resx">
       <DependentUpon>FormMateras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPromocionesSemanales.resx">
+      <DependentUpon>FormPromocionesSemanales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSemillas.resx">
       <DependentUpon>FormSemillas.cs</DependentUpon>

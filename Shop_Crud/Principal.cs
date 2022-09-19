@@ -115,7 +115,7 @@ namespace Shop_Crud
         }
         private void Promo(object sender, EventArgs e)
         {
-            Promocion g = new Promocion();
+            panelPromocion g = new panelPromocion();
 
             if (g == ActiveForm)
             {
