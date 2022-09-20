@@ -187,7 +187,7 @@ namespace Shop_Crud
                     string seccionPro = dtg_admin.Rows[i].Cells["secc_produc"].Value.ToString();
                     string DescriProc = dtg_admin.Rows[i].Cells["descri_produc"].Value.ToString();
 
-                    P = new Producto(nombrePro, precioPro, DescriProc, seccionPro);
+                    P = new Producto(nombrePro, precioPro, seccionPro, DescriProc);
 
                     if (T.Actualizar(index, id, P, U) == true)
                     {

@@ -83,7 +83,6 @@ C:\Users\dacne\Documents\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.FormSemillas
 C:\Users\dacne\Documents\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.FormSustratos.resources
 C:\Users\dacne\Documents\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Principal.resources
 C:\Users\dacne\Documents\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.productos.resources
-C:\Users\dacne\Documents\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Promocion.resources
 C:\Users\dacne\Documents\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Properties.Resources.resources
 C:\Users\dacne\Documents\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.Registrarse.resources
 C:\Users\dacne\Documents\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.csproj.GenerateResource.cache
@@ -96,3 +95,5 @@ C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop
 C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.FormMateras.resources
 C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.FormSemillas.resources
 C:\Users\Jhon Rodriguez\source\repos\app weed\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.FormSustratos.resources
+C:\Users\dacne\Documents\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.FormPromocionesSemanales.resources
+C:\Users\dacne\Documents\C#\shop_crud\Shop_Crud\obj\Debug\Shop_Crud.panelPromocion.resources
